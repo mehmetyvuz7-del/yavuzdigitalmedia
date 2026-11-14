@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMF Group İnşaat ve Enerji | SMF Center · Malatya</title>
+<meta property="og:title" content="SMF Group İnşaat ve Enerji">
+<meta property="og:description" content="SMF Center, Malatya Adalet Binası, TOKİ Osmaniye 1001 konut ve 830 köy konutu. 2016'dan beri Malatya'da inşaat, yapı malzemeleri ve enerji.">
+<meta property="og:image" content="https://smfgroup.com.tr/img/center-gece.jpg">
+<meta property="og:url" content="https://smfgroup.com.tr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="https://smfgroup.com.tr/">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="2016'dan beri Malatya'da inşaat, yapı malzemeleri ve enerji alanında faaliyet gösteren SMF Group. SMF Center, Malatya ve Elazığ'da 830 köy konutu, lüks villa projeleri ve SMF Yapı Market.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--i-resi:url(img/konut-cephe.jpg);--i-office:url(img/ofis.jpg);--i-lounge:url(img/lobi-oturma.jpg);--i-corridor:url(img/koridor.jpg);--i-hero1:url(img/center-gece.jpg);--i-hero2:url(img/center-cadde.jpg);}
+
+:root{
+  --red:#a61c28; --red2:#c8202f; --red-d:#6e0f18;
+  --ink:#16171b; --ink2:#1e2025; --text:#2a2c31; --muted:#6b6e76;
+  --silver:#c3c6cc; --silver2:#e7e9ec; --paper:#f5f6f8; --line:#e2e4e8;
+  --head:'Montserrat',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:#fff;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:min(1240px,90%);margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:.8rem;font-family:var(--head);font-size:.74rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--red)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--red);transform:skewX(-30deg)}
+h1,h2,h3{font-family:var(--head);line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,3.1rem);font-weight:600;color:var(--ink)}
+h2 em{font-style:normal;color:var(--red)}
+.lead{color:var(--muted);font-size:1.05rem;font-weight:300}
+.btn{display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.8rem;font-family:var(--head);font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;transition:.3s;cursor:pointer;border:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(166,28,40,.6)}
+.btn-silver{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn-silver:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:var(--red)}
+.silver-text{background:linear-gradient(100deg,#8d9097,#f3f4f6 45%,#a9acb3 70%,#e9eaed);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);transition:.3s}
+nav.scrolled{box-shadow:0 10px 30px -18px rgba(0,0,0,.35)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:82px}
+.nav-logo img{height:52px;width:auto}
+.links{display:flex;gap:2.2rem;font-family:var(--head);font-size:.82rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.links a{color:#3a3c42;position:relative;padding:.4rem 0}
+.links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:.3s}
+.links a:hover{color:var(--red)}.links a:hover::after{width:100%}
+.nav-cta{padding:.8rem 1.3rem;font-size:.76rem}
+.burger{display:none;background:none;border:none;font-size:1.7rem;color:var(--ink);cursor:pointer}
+
+/* HERO */
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;color:#fff;display:flex;align-items:center}
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:-2%;background-size:cover;background-position:center;opacity:0;animation:fade 16s infinite}
+.slide:nth-child(1){animation-delay:0s}
+.slide:nth-child(2){animation-delay:8s}
+@keyframes fade{0%{opacity:0;transform:scale(1.08)}6%{opacity:1}50%{opacity:1}56%{opacity:0;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,15,18,.9) 0%,rgba(14,15,18,.62) 45%,rgba(14,15,18,.15) 100%),linear-gradient(0deg,rgba(14,15,18,.75),transparent 40%)}
+.hero .hero-main{position:relative;z-index:2;padding-top:82px}
+.hero-box{max-width:640px}
+.hero .eyebrow{color:#fff}.hero .eyebrow::before{background:var(--red2)}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.6rem);font-weight:600;margin:1.3rem 0 1.4rem}
+.hero h1 span{display:block}
+.hero p{font-size:1.08rem;color:#d9dbe0;font-weight:300;max-width:520px}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.4rem}
+.hero-stats{position:absolute;z-index:2;left:0;right:0;bottom:0;border-top:1px solid rgba(255,255,255,.14);background:rgba(14,15,18,.45);backdrop-filter:blur(8px)}
+.hs{display:grid;grid-template-columns:repeat(4,1fr)}
+.hs div{padding:1.4rem 1.2rem;border-right:1px solid rgba(255,255,255,.1)}
+.hs div:last-child{border-right:none}
+.hs b{display:block;font-family:var(--head);font-size:1.5rem;font-weight:600}
+.hs small{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#b9bcc3}
+.progress{position:absolute;z-index:2;right:5%;top:50%;display:flex;flex-direction:column;gap:.7rem}
+.progress i{width:3px;height:40px;background:rgba(255,255,255,.25);position:relative;overflow:hidden}
+.progress i::after{content:"";position:absolute;inset:0;background:var(--red2);transform:translateY(-100%);animation:bar 16s infinite}
+.progress i:nth-child(2)::after{animation-delay:8s}
+@keyframes bar{0%{transform:translateY(-100%)}50%{transform:translateY(0)}50.1%,100%{transform:translateY(100%)}}
+
+section.block{padding:7.5rem 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:3.6rem}
+.head h2{margin-top:.9rem}
+.head .lead{max-width:440px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:5rem;align-items:center}
+.about p{margin-top:1.3rem;color:#4a4d54}
+.sectors{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.sectors span,.sectors a{padding:.55rem 1.1rem;border:1px solid var(--line);background:var(--paper);font-size:.82rem;font-weight:500;color:var(--ink)}
+.sectors a{text-decoration:none;cursor:pointer;transition:.25s;display:inline-flex;align-items:center;gap:.45rem}.sectors a::after{content:'→';font-size:.8rem;opacity:.55;transition:.25s}.sectors a:hover{border-color:var(--red);color:var(--red)}.sectors a:hover::after{opacity:1;transform:translateX(2px)}
+.sectors span:first-child{border-color:var(--red);color:var(--red)}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-img::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--silver);z-index:-1}
+.badge{position:absolute;left:-28px;bottom:36px;background:var(--red);color:#fff;padding:1.4rem 1.6rem;max-width:250px;box-shadow:0 20px 40px -20px rgba(110,15,24,.7)}
+.badge b{font-family:var(--head);font-size:2.4rem;line-height:1;display:block}
+.badge small{font-size:.78rem;letter-spacing:.06em}
+
+/* PROJECT */
+.project{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.project::before{content:"";position:absolute;right:-10%;top:-30%;width:60%;height:120%;background:radial-gradient(circle,rgba(166,28,40,.25),transparent 60%)}
+.project h2{color:#fff}
+.project .lead{color:#a9acb4}
+.proj-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:stretch;position:relative}
+.proj-img{position:relative;overflow:hidden;min-height:480px}
+.proj-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.proj-img:hover img{transform:scale(1.05)}
+.proj-img .tagline{position:absolute;left:0;bottom:0;padding:1.6rem 2rem;background:linear-gradient(0deg,rgba(14,15,18,.9),transparent);width:100%;font-family:var(--head);font-size:1.25rem;font-weight:500}
+.feats{display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.fl{font-family:var(--head);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:#9a9da5}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);margin-bottom:.8rem}
+.loc div{background:var(--ink);padding:1.2rem 1.1rem}
+.loc b{display:block;font-family:var(--head);font-size:1.5rem;font-weight:600;color:#fff;line-height:1.1}
+.loc span{font-size:.8rem;color:#a9acb4}
+.loc div:hover b{color:var(--red2)}
+.perks{display:flex;flex-wrap:wrap;gap:.5rem}
+.perks span{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border:1px solid rgba(195,198,204,.25);font-size:.82rem;color:#dfe1e5}
+.perks span::before{content:"";width:6px;height:6px;background:var(--red2);transform:rotate(45deg)}
+
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:12px}
+.g{position:relative;overflow:hidden;cursor:zoom-in;background:#ddd}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.g:hover img{transform:scale(1.07)}
+.gi{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1s}.g:hover .gi{transform:scale(1.07)}
+.g span{position:absolute;left:0;bottom:0;padding:1rem 1.2rem;font-family:var(--head);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent);width:100%;opacity:0;transform:translateY(10px);transition:.4s}
+.g:hover span{opacity:1;transform:none}
+.g.w2{grid-column:span 2}.g.h2{grid-row:span 2}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,10,12,.94);display:none;place-items:center;padding:4vw;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:88vh;max-width:92vw;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb .lbcap{position:fixed;left:0;right:0;bottom:3vh;text-align:center;color:#c3c6cc;font-family:var(--head);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+
+/* VILLAS */
+.villas{background:var(--paper)}
+.villa-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.v{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.v img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform 1s}
+.v:hover img{transform:scale(1.05)}
+.v .cap{padding:1.4rem 1.6rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.v .cap b{font-family:var(--head);font-weight:600;color:var(--ink)}
+.v .cap small{color:var(--muted);font-size:.85rem}
+.v .pill{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:.4rem .7rem;background:var(--red);color:#fff;white-space:nowrap}
+.v .pill.s{background:var(--ink)}
+.villa-cta{margin-top:2.4rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;padding:1.8rem 2rem;background:#fff;border-left:4px solid var(--red)}
+.villa-cta p{font-family:var(--head);font-weight:500;color:var(--ink);font-size:1.1rem}
+
+/* MARKET */
+.market-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}
+.market-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin:2rem 0 2.4rem}
+.cats span{display:flex;align-items:center;gap:.7rem;padding:.75rem 1rem;background:var(--paper);border:1px solid var(--line);font-size:.9rem;font-weight:500;transition:.3s}
+.cats span::before{content:"";width:8px;height:8px;background:var(--red);transform:rotate(45deg);flex:none}
+.cats span:hover{border-color:var(--red);background:#fff}
+
+/* REF BAND */
+.band{background:linear-gradient(110deg,var(--red-d),var(--red) 60%,#bd2532);color:#fff;padding:3.4rem 0}
+.band-in{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.band h3{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:600;max-width:760px}
+.band small{display:block;font-family:var(--head);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;opacity:.8;margin-bottom:.6rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem}
+.cards{display:grid;gap:1rem;margin-top:2.2rem}
+.cc{display:flex;gap:1.2rem;padding:1.4rem 1.5rem;border:1px solid var(--line);background:#fff;transition:.3s}
+.cc:hover{border-color:var(--red);box-shadow:0 14px 30px -20px rgba(0,0,0,.3)}
+.cc .ic{width:46px;height:46px;flex:none;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line)}
+.cc .ic svg{width:21px;height:21px;stroke:var(--red)}
+.cc small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.2rem}
+.cc b{font-weight:500;color:var(--ink)}
+form{background:var(--ink);color:#fff;padding:3rem;display:grid;gap:1.2rem;align-content:start}
+form h3{font-size:1.5rem;font-weight:600}
+form p{color:#a9acb4;font-size:.92rem;margin-top:-.6rem}
+.f{display:grid;gap:.4rem}
+.f label{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#a9acb4}
+.f input,.f select,.f textarea{background:transparent;border:none;border-bottom:1px solid #3b3e45;color:#fff;font:inherit;padding:.7rem 0;outline:none}
+.f select option{background:var(--ink)}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--red2)}
+.f textarea{min-height:80px;resize:vertical}
+
+
+/* YÖNETİM */
+.mgmt{display:grid;grid-template-columns:1.15fr .85fr;margin-top:6rem;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.mgmt-img{position:relative;min-height:440px;overflow:hidden}
+.mgmt-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.04);transition:transform 1.4s}
+.mgmt:hover .mgmt-img img{transform:scale(1.03)}
+.mgmt-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(22,23,27,.85))}
+.mgmt-img figcaption{position:absolute;left:0;bottom:0;z-index:1;padding:1rem 1.4rem;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#d9dbe0;background:rgba(14,15,18,.72);backdrop-filter:blur(6px)}
+.mgmt-txt{padding:3.6rem 3.4rem;display:flex;flex-direction:column;justify-content:center;position:relative}
+.mgmt-txt::before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border:1px solid rgba(195,198,204,.12);transform:rotate(45deg)}
+.mgmt-txt h3{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:600;margin:1rem 0 1.2rem}
+.mgmt-txt h3 em{font-style:normal;color:var(--red2)}
+.mgmt-txt p{color:#b5b8bf;font-weight:300}
+.mgmt-list{list-style:none;margin-top:1.8rem;display:grid;gap:.9rem}
+.mgmt-list li{display:flex;gap:.9rem;align-items:flex-start;font-size:.95rem;color:#e4e6ea}
+.mgmt-list li::before{content:"";flex:none;width:8px;height:8px;margin-top:.5rem;background:var(--red2);transform:rotate(45deg)}
+
+/* SMF CENTER İNŞAAT SÜRECİ */
+.build{margin-top:5.5rem;padding-top:4.5rem;border-top:1px solid rgba(255,255,255,.1);position:relative}
+.build-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.build-head h3{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:600;margin-top:.8rem}
+.live{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--head);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:#fff;background:rgba(166,28,40,.18);border:1px solid rgba(200,32,47,.45);padding:.55rem .9rem}
+.live i{width:8px;height:8px;border-radius:50%;background:#ff3b4a;box-shadow:0 0 0 0 rgba(255,59,74,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,59,74,0)}100%{box-shadow:0 0 0 0 rgba(255,59,74,0)}}
+.build-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:1.4rem}
+.shot{position:relative;overflow:hidden;cursor:zoom-in;background:#222}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.shot:hover img{transform:scale(1.04)}
+.shot .stamp{position:absolute;top:1rem;left:1rem;font-family:var(--head);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(14,15,18,.75);backdrop-filter:blur(6px);padding:.55rem .85rem;color:#fff;border-left:3px solid var(--red2)}
+.shot .cap{position:absolute;left:0;right:0;bottom:0;padding:2.4rem 1.4rem 1.1rem;background:linear-gradient(0deg,rgba(14,15,18,.9),transparent);font-family:var(--head);font-weight:500;font-size:1rem}
+.shot .cap small{display:block;font-family:var(--body);font-weight:300;font-size:.82rem;color:#b5b8bf;margin-top:.2rem}
+.shot.main{aspect-ratio:16/8.5}
+.build-side{display:grid;grid-template-rows:auto 1fr;gap:1.4rem}
+.build-side .shot{aspect-ratio:4/3}
+.steps{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);padding:1.6rem 1.6rem 1.2rem}
+.steps h4{font-family:var(--head);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:#9a9da5;margin-bottom:1.2rem;font-weight:600}
+.step{display:grid;grid-template-columns:22px 1fr auto;gap:.9rem;align-items:center;position:relative;padding-bottom:1rem}
+.step:not(:last-child)::before{content:"";position:absolute;left:10px;top:22px;bottom:2px;width:2px;background:rgba(255,255,255,.1)}
+.step.done:not(:last-child)::before{background:var(--red2)}
+.step i{width:22px;height:22px;border-radius:50%;border:2px solid rgba(255,255,255,.22);display:grid;place-items:center;z-index:1;background:var(--ink)}
+.step.done i{background:var(--red2);border-color:var(--red2)}
+.step.done i::after{content:"";width:8px;height:4px;border:2px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.step.now i{border-color:var(--red2)}
+.step.now i::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--red2);animation:pulse 2s infinite}
+.step b{font-family:var(--head);font-weight:500;font-size:.92rem;color:#e7e9ec}
+.step:not(.done):not(.now) b{color:#8d9097}
+.step span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#8d9097;white-space:nowrap}
+.step.done span{color:#c3c6cc}.step.now span{color:#ff6b77;font-weight:600}
+
+/* REFERANS: ADALET BİNASI */
+.ref{background:var(--paper)}
+.ref-grid{display:grid;grid-template-columns:1.45fr .55fr;gap:1.2rem}
+.vid{position:relative;overflow:hidden;background:#000;aspect-ratio:16/9}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.vid .tag{position:absolute;top:1.1rem;left:1.1rem;display:flex;gap:.5rem}
+.vid .tag span{font-family:var(--head);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .8rem;background:rgba(14,15,18,.7);backdrop-filter:blur(6px);color:#fff}
+.vid .tag span:first-child{background:var(--red)}
+.vid button{position:absolute;right:1.1rem;bottom:1.1rem;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(14,15,18,.55);backdrop-filter:blur(6px);display:grid;place-items:center;cursor:pointer;transition:.3s}
+.vid button:hover{background:var(--red);border-color:var(--red)}
+.vid button svg{width:18px;height:18px;fill:#fff}
+.ref-side{display:grid;grid-template-rows:1fr 1fr;gap:1.2rem}
+.ref-side .shot{min-height:0}
+.ref-side .shot .cap{font-size:.9rem;padding:2rem 1.2rem 1rem;color:#fff}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:1.2rem;background:#fff;border:1px solid var(--line)}
+.facts div{padding:1.6rem 1.6rem;border-right:1px solid var(--line)}
+.facts div:last-child{border-right:none}
+.facts small{display:block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.facts b{font-family:var(--head);font-weight:600;font-size:1.15rem;color:var(--ink)}
+.ref-quote{margin-top:2.6rem;display:grid;grid-template-columns:auto 1fr;gap:1.6rem;align-items:center;padding:2rem 2.2rem;background:var(--ink);color:#fff}
+.ref-quote svg{width:44px;height:44px;fill:var(--red2)}
+.ref-quote p{font-family:var(--head);font-size:clamp(1.05rem,1.8vw,1.35rem);font-weight:500;line-height:1.45}
+
+/* ŞANTİYELERDEN */
+.drone-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.drone-grid .shot{aspect-ratio:16/10;color:#fff}
+.drone-grid .shot .cap{font-size:1.1rem}
+.drone-note{margin-top:1.6rem;display:flex;align-items:center;gap:.8rem;color:var(--muted);font-size:.9rem}
+.drone-note svg{width:20px;height:20px;stroke:var(--red);flex:none}
+
+@media (max-width:1100px){.links{gap:1.5rem;font-size:.76rem}}
+@media (max-width:1000px){
+  .mgmt{grid-template-columns:1fr;margin-top:4rem}.mgmt-img{min-height:300px}.mgmt-img::after{background:linear-gradient(0deg,rgba(22,23,27,.6),transparent 50%)}
+  .mgmt-txt{padding:2.6rem 1.8rem}
+  .build-grid,.ref-grid,.drone-grid{grid-template-columns:1fr}
+  .build-side{grid-template-rows:auto auto}
+  .ref-side{grid-template-rows:auto;grid-template-columns:1fr 1fr}.ref-side .shot{aspect-ratio:4/3}
+  .facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:none}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .shot.main{aspect-ratio:4/3}
+}
+@media (max-width:560px){.ref-side{grid-template-columns:1fr}.ref-quote{grid-template-columns:1fr;padding:1.6rem}.step span{display:none}}
+
+
+/* 830 KÖY KONUTU */
+.homes{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:3rem;padding:3rem 3.2rem;margin-bottom:2.6rem;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.homes::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0% 50%,rgba(166,28,40,.35),transparent 55%)}
+.homes::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border:1px solid rgba(195,198,204,.12);transform:rotate(45deg)}
+.homes>*{position:relative;z-index:1}
+.big{font-family:var(--head);font-weight:700;font-size:clamp(4rem,9vw,7rem);line-height:.9;letter-spacing:-.03em}
+.big small{display:block;font-size:.8rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#c3c6cc;margin-top:.9rem}
+.homes h3{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:600;line-height:1.25}
+.homes h3 em{font-style:normal;color:var(--red2)}
+.homes p{color:#b5b8bf;font-weight:300;margin-top:.8rem;max-width:520px}
+.cities{display:flex;flex-direction:column;gap:.7rem}
+.cities span{display:flex;align-items:center;gap:.7rem;padding:.85rem 1.2rem;border:1px solid rgba(195,198,204,.25);font-family:var(--head);font-size:.82rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.cities span svg{width:16px;height:16px;stroke:var(--red2);flex:none}
+@media (max-width:1000px){.homes{grid-template-columns:1fr;gap:1.6rem;padding:2.4rem 1.8rem}.cities{flex-direction:row;flex-wrap:wrap}}
+
+
+/* TOKİ OSMANİYE */
+.toki{display:grid;grid-template-columns:1.1fr .9fr;margin-top:4.5rem;background:#fff;border:1px solid var(--line)}
+.toki .shot{min-height:520px;color:#fff}
+.toki .shot img{position:absolute;inset:0}
+.toki-txt{padding:3.2rem 3rem;display:flex;flex-direction:column;justify-content:center}
+.toki-txt h3{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;margin:1rem 0 1rem;line-height:1.15}
+.toki-txt h3 em{font-style:normal;color:var(--red)}
+.toki-txt p{color:var(--muted)}
+.toki-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:2rem;border-top:1px solid var(--line)}
+.toki-stats div{padding:1.3rem 0 0;}
+.toki-stats div+div{padding-left:1.2rem;border-left:1px solid var(--line)}
+.toki-stats b{display:block;font-family:var(--head);font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1}
+.toki-stats small{display:block;margin-top:.45rem;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.toki>*,.toki-stats>*{min-width:0}
+@media (max-width:560px){.toki-stats b{font-size:1.25rem}.toki-stats div+div{padding-left:.8rem}.toki-stats small{letter-spacing:.1em}}
+@media (max-width:1000px){.toki{grid-template-columns:1fr}.toki .shot{min-height:0;aspect-ratio:1/0.9}.toki-txt{padding:2.4rem 1.6rem}}
+
+
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.kv{display:flex;gap:.8rem;align-items:flex-start;font-size:.8rem;line-height:1.5;color:#a9acb4;cursor:pointer;text-transform:none;letter-spacing:0}
+.kv input{width:18px;height:18px;flex:none;margin-top:.15rem;accent-color:var(--red2);cursor:pointer}
+.ferr{color:#ff8a94;font-size:.85rem;min-height:0}
+.ferr:empty{display:none}
+.f input.bad,.f textarea.bad{border-color:#ff6b77!important}
+.falt{text-align:center;font-size:.82rem;color:#a9acb4;text-decoration:underline;text-underline-offset:3px}
+.falt:hover{color:#fff}
+form.sending #fbtn{opacity:.6;pointer-events:none}
+form.done>*:not(.fok){display:none!important}
+.fok{text-align:center;padding:2rem 0;display:grid;gap:1rem;justify-items:center}.fok[hidden]{display:none}
+.fok-ic{width:64px;height:64px;border-radius:50%;background:rgba(200,32,47,.18);display:grid;place-items:center;color:#ff6b77}
+.fok-ic svg{width:30px;height:30px}
+@media (max-width:560px){.f2{grid-template-columns:1fr}}
+
+
+.kvlink{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.kvm{position:fixed;inset:0;z-index:120;background:rgba(10,11,13,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:4vh 4vw}
+.kvm.on{display:flex}
+.kvm-box{background:#fff;color:var(--ink);max-width:780px;width:100%;max-height:92vh;display:flex;flex-direction:column;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.kvm-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem 2rem;border-bottom:1px solid var(--line)}
+.kvm-head h3{font-size:1.2rem;font-weight:700}
+.kvm-head button{width:40px;height:40px;border:1px solid var(--line);background:none;font-size:1.4rem;cursor:pointer;flex:none}
+.kvm-head button:hover{background:var(--ink);color:#fff}
+.kvm-body{overflow-y:auto;padding:1.6rem 2rem 2.2rem;font-size:.92rem;line-height:1.7;color:#3b3e45}
+.kvm-body h4{font-family:var(--head);font-size:.95rem;font-weight:700;color:var(--ink);margin:1.4rem 0 .4rem}
+.kvm-body ul{padding-left:1.2rem}
+.kvm-body .meta{background:var(--paper);border-left:3px solid var(--red);padding:1rem 1.2rem;margin-bottom:.4rem}
+
+
+/* SMF CENTER KONUM VİDEOSU */
+.konum{display:grid;grid-template-columns:minmax(0,520px) 1fr;gap:4rem;align-items:center;margin-top:5.5rem}
+.kvid{position:relative;aspect-ratio:1/1;overflow:hidden;background:#000}
+.kvid video{width:100%;height:100%;object-fit:cover;display:block}
+.kvid .tag{position:absolute;top:1rem;left:1rem;font-family:var(--head);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;padding:.5rem .8rem;background:rgba(14,15,18,.7);backdrop-filter:blur(6px);color:#fff}
+.snd{position:absolute;right:1rem;bottom:1rem;display:flex;align-items:center;gap:.55rem;padding:.65rem 1rem;border:1px solid rgba(255,255,255,.45);background:rgba(14,15,18,.6);backdrop-filter:blur(6px);color:#fff;font-family:var(--head);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:.3s}
+.snd:hover{background:var(--red);border-color:var(--red)}
+.snd svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2}
+.konum-txt h3{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:600;margin:1rem 0 1.1rem;line-height:1.2}
+.konum-txt p{color:#b5b8bf;font-weight:300;max-width:440px}
+@media (max-width:1000px){.konum{grid-template-columns:1fr;gap:2rem;margin-top:4rem}.kvid{max-width:560px}}
+
+
+.scope{display:grid;grid-template-columns:repeat(3,1fr);margin-top:1.2rem;background:var(--ink);color:#fff}
+.scope div{padding:1.6rem 1.8rem;position:relative;display:flex;gap:1rem;align-items:flex-start}
+.scope div+div{border-left:1px solid rgba(255,255,255,.1)}
+.scope span{font-family:var(--head);font-size:.8rem;font-weight:700;color:var(--red2);letter-spacing:.1em;padding-top:.15rem}
+.scope b{display:block;font-family:var(--head);font-weight:600;font-size:1rem}
+.scope small{display:block;color:#a9acb4;font-size:.85rem;margin-top:.3rem;line-height:1.5}
+@media (max-width:1000px){.scope{grid-template-columns:1fr}.scope div+div{border-left:none;border-top:1px solid rgba(255,255,255,.1)}}
+
+
+/* YÖNETİM KADROSU */
+.team-sec{padding:5.5rem 0;border-top:1px solid var(--line)}
+.team-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.team-head h2{font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:600;margin-top:.8rem}
+.team-head p{color:var(--muted);max-width:420px;font-size:.95rem}
+.team{display:grid;grid-template-columns:repeat(2,minmax(0,300px));gap:1.6rem}
+.member{margin:0}
+.member .ph{aspect-ratio:4/5;overflow:hidden;background:#111}
+.member img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:transform 1.2s,filter .6s}
+.member:hover img{transform:scale(1.03)}
+.member figcaption{padding:1.1rem 0 0;border-top:2px solid var(--red);margin-top:1rem}
+.member b{display:block;font-family:var(--head);font-size:1.12rem;font-weight:600;color:var(--ink)}
+.member small{display:block;margin-top:.25rem;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:560px){.team{grid-template-columns:1fr 1fr;gap:1rem}.member b{font-size:.98rem}.member small{font-size:.62rem;letter-spacing:.1em}}
+
+.tels{display:flex;flex-direction:column;gap:.2rem}.tels a{color:inherit;transition:color .2s}.tels a:hover{color:var(--red)}
+footer{background:#0f1013;color:#9a9da5;padding:3.2rem 0 2rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem;padding-bottom:2.4rem;border-bottom:1px solid #24262b}
+.foot .plate{background:#fff;display:inline-block;padding:.9rem 1.2rem}
+.foot .plate img{height:56px;width:auto}
+.foot h4{font-family:var(--head);color:#fff;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1rem}
+.foot ul{list-style:none;display:grid;gap:.5rem;font-size:.9rem}
+.foot a:hover{color:#fff}
+.copy{padding-top:1.6rem;font-size:.8rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+.wa{position:fixed;right:22px;bottom:22px;z-index:80;width:60px;height:60px;border-radius:50%;background:var(--red);display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(110,15,24,.7);transition:.3s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  .links,.nav-cta{display:none}
+  .burger{display:block}
+  .links.open{display:flex;flex-direction:column;position:absolute;top:82px;left:0;right:0;background:#fff;padding:1.8rem 5%;gap:1.2rem;border-bottom:1px solid var(--line)}
+  .nav-logo img{height:44px}
+  .hero{height:auto;min-height:100svh;align-items:flex-start}
+  .hero .hero-main{padding-top:140px;padding-bottom:280px}
+  .hero::before{background:linear-gradient(180deg,rgba(14,15,18,.85) 0%,rgba(14,15,18,.55) 55%,rgba(14,15,18,.85) 100%)}
+  .slide{background-position:62% center}
+  .hs{grid-template-columns:1fr 1fr}
+  .hs div:nth-child(2){border-right:none}
+  .hs div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1)}
+  .progress{display:none}
+  .about-grid,.proj-grid,.market-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .badge{left:12px}
+  .proj-img{min-height:340px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+  .g.w2{grid-column:span 2}
+  .villa-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  section.block{padding:5.5rem 0}
+  form{padding:2.2rem 1.6rem}
+}
+@media (max-width:520px){
+  .hs b{font-size:1.2rem}
+  .hs div{padding:1rem}
+  .cats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container nav-in">
+    <a href="#top" class="nav-logo"><img src="img/logo.png" alt="SMF Group İnşaat ve Enerji"></a>
+    <div class="links" id="links">
+      <a href="#hakkimizda">Kurumsal</a>
+      <a href="#smf-center">SMF Center</a>
+      <a href="#referanslar">Referanslar</a>
+      <a href="#santiyeler">Şantiyeler</a>
+      <a href="#villalar">Villalar</a>
+      <a href="#yapi-market">Yapı Market</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+    <a href="#iletisim" class="btn btn-red nav-cta">Bilgi Alın</a>
+    <button class="burger" id="burger" aria-label="Menü">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="slides">
+    <div class="slide" style="background-image:var(--i-hero1)"></div>
+    <div class="slide" style="background-image:var(--i-hero2)"></div>
+  </div>
+  <div class="container hero-main">
+    <div class="hero-box reveal">
+      <span class="eyebrow">SMF Center · Malatya</span>
+      <h1><span>Geleceğin iş dünyasına</span><span class="silver-text">yön veriyoruz.</span></h1>
+      <p>2016'dan bu yana inşaat, yapı malzemeleri ve enerji alanında güvenin ve kalitenin adresi. Şehrin merkezinde ultra lüks ofisler ve daireler: SMF Center.</p>
+      <div class="hero-cta">
+        <a href="#smf-center" class="btn btn-red">Projeyi İncele →</a>
+        <a href="https://wa.me/905382372716?text=Merhaba%2C%20SMF%20Center%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-silver">Satış Ofisiyle İletişime Geçin</a>
+      </div>
+    </div>
+  </div>
+  <div class="progress"><i></i><i></i></div>
+  <div class="hero-stats">
+    <div class="container hs">
+      <div><b>2016</b><small>Kuruluş</small></div>
+      <div><b>5 Sektör</b><small>Stratejik alanda faaliyet</small></div>
+      <div><b>Referans</b><small>Malatya Adalet Binası</small></div>
+      <div><b>830 Konut</b><small>Malatya &amp; Elazığ köy konutları</small></div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="block" id="hakkimizda">
+  <div class="container about-grid">
+    <div class="about reveal">
+      <span class="eyebrow">Hakkımızda</span>
+      <h2 style="margin-top:.9rem">Güvenin ve kalitenin<br><em>simgesi.</em></h2>
+      <p>2016 yılında Yönetim Kurulu Başkanımız Fırat Bayrak liderliğinde kurulan SMF Group; inşaat, yapı malzemeleri, enerji, eğitim ve gıda gibi stratejik sektörlerde sürdürülebilir bir büyüme anlayışıyla faaliyet göstermektedir.</p>
+      <p>Malatya Adalet Binası gibi büyük ölçekli ve yüksek hassasiyet gerektiren kamu projelerinde, Osmaniye'deki TOKİ 1001 konut projesinde ve Malatya ile Elazığ'da inşa ettiğimiz 830 köy konutunda sergilediğimiz mühendislik başarısı, iş disiplini ve detaylara verdiğimiz önem, firmamızın en güçlü referansıdır.</p>
+      <div class="sectors"><span>İnşaat</span><a href="#iletisim" data-proje="SMF Yapı Market" title="Yapı malzemeleri için bilgi alın">Yapı Malzemeleri</a><span>Enerji</span><span>Eğitim</span><span>Gıda</span></div>
+    </div>
+    <div class="about-img reveal">
+      <img src="img/center-cephe.jpg" alt="SMF Center modern cephe">
+      <div class="badge"><b>2016</b><small>yılından bu yana Türkiye'nin farklı bölgelerinde yüksek nitelikli projeler</small></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mgmt reveal">
+      <figure class="mgmt-img" data-full="img/yonetim.jpg" data-cap="SMF Group yönetimi · Şantiye ofisi" style="cursor:zoom-in"><img src="img/yonetim.jpg" alt="SMF Group yönetimi şantiye ofisinde toplantıda" loading="lazy"><figcaption>SMF Group Yönetimi · Şantiye Ofisi</figcaption></figure>
+      <div class="mgmt-txt">
+        <span class="eyebrow" style="color:#c3c6cc">Yönetim</span>
+        <h3>Kararlarımızı masa başında değil, <em>sahada</em> alıyoruz.</h3>
+        <p>Yönetim Kurulu Başkanımız Fırat Bayrak liderliğindeki yönetim ekibimiz, projelerimizin her aşamasını şantiyede bizzat takip eder. Planlamadan teslime kadar her kararın arkasında sahadaki tecrübemiz vardır.</p>
+        <ul class="mgmt-list">
+          <li>Projelerin şantiyede yerinde yönetimi ve denetimi</li>
+          <li>Kamu projelerinde edinilmiş mühendislik disiplini</li>
+          <li>Yatırımcı ve alıcılarla doğrudan, şeffaf iletişim</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="block project" id="smf-center">
+  <div class="container">
+    <div class="head reveal">
+      <div><span class="eyebrow" style="color:var(--silver)">Öne Çıkan Proje</span><h2>SMF Center<br><span class="silver-text">şehrin prestijli yeni adresi.</span></h2></div>
+      <p class="lead">Çağdaş mimarisi, üst düzey malzeme kalitesi, lüks ve konforu bir arada sunan modern ofis ve ticari alanlarıyla bölgenin yeni prestij simgesi.</p>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-img reveal"><img src="img/center-lobi.jpg" alt="SMF Center lobi"><div class="tagline">Ultra lüks ofisler ve daireler</div></div>
+      <div class="feats reveal">
+        <small class="fl">Konum avantajı</small>
+        <div class="loc">
+          <div><b>1 dk</b><span>Yeni Adliye Binası</span></div>
+          <div><b>Karşısı</b><span>Forum AVM</span></div>
+          <div><b>1 dk</b><span>Malatya Park AVM</span></div>
+          <div><b>3 dk</b><span>Eğitim ve Araştırma Hastanesi</span></div>
+        </div>
+        <small class="fl">Ayrıcalıklar</small>
+        <div class="perks"><span>Özel kartlı asansör</span><span>Özel lobi alanı</span><span>Danışman hizmeti</span><span>Kapalı ve açık otopark</span></div>
+      </div>
+    </div>
+
+    <div class="konum">
+      <div class="kvid reveal">
+        <video id="konVid" src="video/smf-center-konum.mp4" poster="img/smf-center-konum-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <div class="konum-txt reveal">
+        <span class="eyebrow" style="color:#c3c6cc">Konum</span>
+        <h3>Şehrin yeni merkezinde, <span class="silver-text">her şeye yakın.</span></h3>
+        <p>SMF Center; Yeni Adliye Binası, Forum AVM ve Malatya Park AVM'ye yürüme mesafesinde, şehrin en hızlı gelişen aksında yükseliyor.</p>
+      </div>
+    </div>
+
+    <div class="build">
+      <div class="build-head reveal">
+        <div><span class="live"><i></i>Şantiyeden Güncel</span><h3>SMF Center <span class="silver-text">yükselmeye başladı.</span></h3></div>
+        <p class="lead" style="max-width:430px">Hafriyat ve temel kazısı çalışmaları tamamlanma aşamasında. İnşaatın her adımını buradan şeffaf şekilde paylaşıyoruz.</p>
+      </div>
+      <div class="build-grid">
+        <figure class="shot main reveal" data-full="img/center-santiye-1.jpg" data-cap="SMF Center şantiyesi · 11 Kasım 2026"><img src="img/center-santiye-1.jpg" alt="SMF Center şantiyesi temel kazısı genel görünüm" loading="lazy"><span class="stamp">11 Kasım 2026</span><figcaption class="cap">Temel kazısı · Genel görünüm<small>Proje alanı, Yeşilyurt / Malatya</small></figcaption></figure>
+        <div class="build-side">
+          <figure class="shot reveal" data-full="img/center-santiye-2.jpg" data-cap="SMF Center şantiyesi · Hafriyat çalışmaları"><img src="img/center-santiye-2.jpg" alt="SMF Center şantiyesinde iş makinesi" loading="lazy"><span class="stamp">Sahadan</span><figcaption class="cap">Hafriyat çalışmaları</figcaption></figure>
+          <div class="steps reveal">
+            <h4>İnşaat Süreci</h4>
+            <div class="step done"><i></i><b>Proje &amp; Ruhsat</b><span>Tamamlandı</span></div>
+            <div class="step now"><i></i><b>Hafriyat &amp; Temel</b><span>Devam ediyor</span></div>
+            <div class="step"><i></i><b>Kaba İnşaat</b><span>Sırada</span></div>
+            <div class="step"><i></i><b>Cephe &amp; İnce İşler</b><span>Planlandı</span></div>
+            <div class="step"><i></i><b>Teslim</b><span>Planlandı</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="block" id="galeri">
+  <div class="container">
+    <div class="head reveal">
+      <div><span class="eyebrow">Galeri</span><h2>Modern tasarımın<br><em>zarafeti.</em></h2></div>
+      <p class="lead">Şıklık, konfor ve prestij tek mekânda buluşuyor. Görseller projenin tasarım çalışmalarındandır.</p>
+    </div>
+    <div class="gal reveal">
+      <div class="g w2 h2" role="img" aria-label="SMF Center gece cephe"><i class="gi" style="background-image:var(--i-hero1)"></i><span>Dış Cephe</span></div>
+      <div class="g" role="img" aria-label="SMF Center lobi oturma alanı"><i class="gi" style="background-image:var(--i-lounge)"></i><span>Lobi</span></div>
+      <div class="g h2" role="img" aria-label="SMF Center koridor"><i class="gi" style="background-image:var(--i-corridor)"></i><span>Koridor</span></div>
+      <div class="g" role="img" aria-label="SMF Center ofis"><i class="gi" style="background-image:var(--i-office)"></i><span>Ofis</span></div>
+      <div class="g w2" role="img" aria-label="SMF Center cadde cephesi"><i class="gi" style="background-image:var(--i-hero2)"></i><span>Cadde Cephesi</span></div>
+      <div class="g w2" role="img" aria-label="SMF Center konut cephesi"><i class="gi" style="background-image:var(--i-resi)"></i><span>Konut Cephesi</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- REFERANS: MALATYA ADALET BİNASI -->
+<section class="block ref" id="referanslar">
+  <div class="container">
+    <div class="head reveal">
+      <div><span class="eyebrow">Referans Proje</span><h2>Malatya Adalet Binası<br><em>büyük ölçekte güven.</em></h2></div>
+      <p class="lead">Malatya Adalet Binası'nda kaba inşaatın tamamlanmasının ardından, ince işlerden anahtar teslime kadar uzanan tüm süreci üstlendik. Her aşamayı mühendislik disiplini, planlama ve iş güvenliği anlayışımızla yürüttük.</p>
+    </div>
+    <div class="ref-grid">
+      <div class="vid reveal">
+        <video id="refVid" src="video/adliye-drone.mp4" poster="img/adliye-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="tag"><span>Drone Çekimi</span><span>Malatya</span></div>
+        <button id="vidBtn" aria-label="Videoyu durdur / oynat"><svg viewBox="0 0 24 24" id="vidIc"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg></button>
+      </div>
+      <div class="ref-side">
+        <figure class="shot reveal" data-full="img/adliye-on.jpg" data-cap="Malatya Adalet Binası · Ön cephe"><img src="img/adliye-on.jpg" alt="Malatya Adalet Binası ön cephe" loading="lazy"><figcaption class="cap">Ön cephe</figcaption></figure>
+        <figure class="shot reveal" data-full="img/adliye-kusbakisi.jpg" data-cap="Malatya Adalet Binası · Kuşbakışı görünüm"><img src="img/adliye-kusbakisi.jpg" alt="Malatya Adalet Binası kuşbakışı görünüm" loading="lazy"><figcaption class="cap">Kuşbakışı görünüm</figcaption></figure>
+      </div>
+    </div>
+    <div class="facts reveal">
+      <div><small>Proje türü</small><b>Kamu yapısı</b></div>
+      <div><small>Konum</small><b>Malatya</b></div>
+      <div><small>Üstlenilen kapsam</small><b>İnce işler ve anahtar teslim</b></div>
+      <div><small>Çatı</small><b>Güneş paneli</b></div>
+    </div>
+    <div class="scope reveal">
+      <div><span>01</span><p><b>Kaba inşaat sonrası devralma</b><small>Taşıyıcı sistemi tamamlanan yapının teknik kontrolü ve iş programının oluşturulması</small></p></div>
+      <div><span>02</span><p><b>İnce işler ve tamamlama</b><small>Cephe, iç mekân ve tamamlama imalatlarının planlı ve koordineli yürütülmesi</small></p></div>
+      <div><span>03</span><p><b>Anahtar teslim</b><small>Yapının tüm imalatları tamamlanmış, kullanıma hazır şekilde teslimi</small></p></div>
+    </div>
+    <div class="ref-quote reveal">
+      <svg viewBox="0 0 24 24"><path d="M4 18h6v-6H6.5c0-2.5 1.2-3.8 3.5-4.2V5C6 5.5 4 8.2 4 12.5zm10 0h6v-6h-3.5c0-2.5 1.2-3.8 3.5-4.2V5c-4 .5-6 3.2-6 7.5z"/></svg>
+      <p>Kamu projelerinde gösterdiğimiz titizliği, SMF Center ve tüm konut projelerimizde de aynı standartla uyguluyoruz.</p>
+    </div>
+
+    <div class="toki reveal">
+      <figure class="shot" data-full="img/toki-osmaniye.jpg" data-cap="TOKİ Osmaniye 1001 Konut Projesi"><img src="img/toki-osmaniye.jpg" alt="TOKİ Osmaniye 1001 konut projesi drone görünümü" loading="lazy"><span class="stamp">Drone Çekimi · Osmaniye</span><figcaption class="cap">TOKİ Osmaniye Konutları<small>Havadan görünüm</small></figcaption></figure>
+      <div class="toki-txt">
+        <span class="eyebrow">Referans Proje · TOKİ</span>
+        <h3>Osmaniye'de <em>1001 konut</em> projesi.</h3>
+        <p>Toplu Konut İdaresi Başkanlığı (TOKİ) tarafından Osmaniye'de hayata geçirilen 1001 konutluk projede yer aldık. Depremden etkilenen bölgede, ailelerin güvenli ve modern yaşam alanlarına kavuşmasına katkı sunduk.</p>
+        <div class="toki-stats">
+          <div><b><span class="count" data-to="1001">1001</span></b><small>Konut</small></div>
+          <div><b>TOKİ</b><small>İşveren</small></div>
+          <div><b>Osmaniye</b><small>Konum</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ŞANTİYELERDEN -->
+<section class="block" id="santiyeler">
+  <div class="container">
+    <div class="head reveal">
+      <div><span class="eyebrow">Şantiyelerimizden</span><h2>Projelerimiz<br><em>sahada büyüyor.</em></h2></div>
+      <p class="lead">Malatya Akçadağ'da 19 farklı köyde eş zamanlı yürüttüğümüz köy konutu uygulamalarından ve devam eden şantiyelerimizden havadan görüntüler.</p>
+    </div>
+    <div class="homes reveal">
+      <div class="big"><span class="count" data-to="830">830</span><small>Köy Konutu</small></div>
+      <div><h3>Malatya ve Elazığ'da <em>830 köy konutunu</em> inşa ettik.</h3><p>Bölgemizin kalkınmasına katkı sunan bu projelerde yüzlerce aileyi güvenli ve modern yuvalarına kavuşturduk. Büyük ölçekli toplu konut üretimindeki planlama ve saha tecrübemiz, tüm projelerimizin güvencesidir.</p></div>
+      <div class="cities"><span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>Malatya</span><span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>Elazığ</span></div>
+    </div>
+    <div class="drone-grid">
+      <figure class="shot reveal" data-full="img/santiye-drone-1.jpg" data-cap="Akçadağ Köy Konutları · Malatya · 19 köyde uygulama"><img src="img/santiye-drone-1.jpg" alt="Malatya Akçadağ köy konutları şantiyesi drone görünümü" loading="lazy"><span class="stamp">Drone Çekimi</span><figcaption class="cap">Akçadağ Köy Konutları · Malatya<small>19 farklı köyde eş zamanlı uygulama · Kaba inşaat aşaması</small></figcaption></figure>
+      <figure class="shot reveal" data-full="img/santiye-drone-2.jpg" data-cap="Köy Konutları · Malatya"><img src="img/santiye-drone-2.jpg" alt="Malatya köy konutları drone görünümü" loading="lazy"><span class="stamp">Drone Çekimi</span><figcaption class="cap">Köy Konutları · Malatya<small>Çatı ve dış cephe aşaması</small></figcaption></figure>
+    </div>
+    <p class="drone-note reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Şantiye görüntüleri düzenli olarak güncellenmektedir.</p>
+  </div>
+</section>
+
+<!-- VILLAS -->
+<section class="block villas" id="villalar">
+  <div class="container">
+    <div class="head reveal">
+      <div><span class="eyebrow">Konut Projeleri · Malatya</span><h2>Lüks villalar,<br><em>modern yaşam.</em></h2></div>
+      <p class="lead">Malatya'da hayata geçirdiğimiz villa projemiz; doğal malzemeler, geniş cam yüzeyler ve özenli peyzaj düzenlemesiyle tasarlandı. İnşaat çalışmaları devam ediyor.</p>
+    </div>
+    <div class="villa-grid">
+      <div class="v reveal"><img src="img/villa-1.jpg" alt="Lüks villa projesi görseli"><div class="cap"><div><b>Lüks Villa Projesi · Malatya</b><br><small>Mimari görselleştirme</small></div><span class="pill">Proje</span></div></div>
+      <div class="v reveal"><img src="img/villa-peyzaj.jpg" alt="Lüks villa giriş ve peyzaj"><div class="cap"><div><b>Peyzaj &amp; Giriş</b><br><small>Mimari görselleştirme</small></div><span class="pill s">Tasarım</span></div></div>
+      <div class="v reveal" style="grid-column:1/-1"><img src="img/villa-santiye.jpg" alt="Villa projesi şantiye havadan görünüm" style="aspect-ratio:21/9;object-position:center 75%"><div class="cap"><div><b>Şantiyeden Güncel Görünüm</b><br><small>Kaba inşaat aşaması</small></div><span class="pill s">Devam Ediyor</span></div></div>
+    </div>
+    <div class="villa-cta reveal"><p>Villa projemiz hakkında detaylı bilgi ve satış danışmanlığı için bize ulaşın.</p><a class="btn btn-red" href="https://wa.me/905382372716?text=Merhaba%2C%20villa%20projeniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Hemen Bilgi Alın →</a></div>
+  </div>
+</section>
+
+<!-- MARKET -->
+<section class="block" id="yapi-market">
+  <div class="container market-grid">
+    <div class="market-img reveal"><img src="img/yapi-market.jpg" alt="SMF Yapı Market mağaza önü"></div>
+    <div class="reveal">
+      <span class="eyebrow">SMF Yapı Market</span>
+      <h2 style="margin-top:.9rem">Yapının ihtiyacı olan<br><em>her şey tek adreste.</em></h2>
+      <p class="lead" style="margin-top:1.2rem">Projelerimizde kullandığımız kaliteyi yapı marketimizle size de sunuyoruz. Nalburiye ve hırdavattan vitrifiye ve parkeye kadar geniş ürün yelpazesi.</p>
+      <div class="cats"><span>Alçı &amp; Boya</span><span>Hırdavat &amp; Nalburiye</span><span>Parke &amp; Fayans</span><span>Vitrifiye</span><span>Sıhhi Tesisat Malzemeleri</span><span>Mobilya &amp; Aydınlatma Malzemeleri</span></div>
+      <a href="https://wa.me/905382372716?text=Merhaba%2C%20Yap%C4%B1%20Market%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-dark">Ürün Bilgisi Alın →</a>
+    </div>
+  </div>
+</section>
+
+<!-- YÖNETİM KADROSU -->
+<section class="team-sec" id="yonetim">
+  <div class="container">
+    <div class="team-head reveal">
+      <div><span class="eyebrow">Yönetim</span><h2>Yönetim Kadromuz</h2></div>
+      <p>Projelerimizi tecrübeli yönetim ve teknik kadromuzla planlıyor, sahada bizzat takip ediyoruz.</p>
+    </div>
+    <div class="team">
+      <figure class="member reveal"><div class="ph"><img src="img/firat-bayrak.jpg" alt="Fırat Bayrak, SMF Group Yönetim Kurulu Başkanı" loading="lazy"></div><figcaption><b>Fırat Bayrak</b><small>Yönetim Kurulu Başkanı</small></figcaption></figure>
+      <figure class="member reveal"><div class="ph"><img src="img/emre-kuzu.jpg" alt="İ. Emre Kuzu, Mimar" loading="lazy"></div><figcaption><b>İ. Emre Kuzu</b><small>Mimar</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="container band-in">
+    <div><small>Referansımız</small><h3>Malatya Adalet Binası'ndan TOKİ Osmaniye 1001 konuta ve 830 köy konutuna; büyük ölçekli projelerde edindiğimiz tecrübe, her projemizde.</h3></div>
+    <a href="#iletisim" class="btn btn-silver">Bize Ulaşın</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="block" id="iletisim">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">İletişim</span>
+      <h2 style="margin-top:.9rem">Projelerimiz hakkında<br><em>bilgi alın.</em></h2>
+      <div class="cards">
+        <a class="cc" href="https://www.google.com/maps/search/?api=1&query=SMF+Yap%C4%B1+Market+Cevatpa%C5%9Fa+Ye%C5%9Filyurt+Malatya" target="_blank" rel="noopener"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 22s7-7.5 7-13a7 7 0 0 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><small>Adres</small><b>Cevatpaşa Mah. Şehit İ. Alpay Bulvarı, Kartal Kavşağı No:15C Yeşilyurt / Malatya</b></div></a>
+        <div class="cc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 3h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></div><div><small>Telefon</small><b class="tels"><a href="tel:+905075553218">0507 555 32 18</a><a href="tel:+905360267404">0536 026 74 04</a><a href="tel:+905382372716">0538 237 27 16</a></b></div></div>
+        <a class="cc" href="mailto:smfenerji@hotmail.com"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><small>E-posta</small><b>smfenerji@hotmail.com</b></div></a>
+        <a class="cc" href="https://instagram.com/smfgroup.insaat" target="_blank" rel="noopener"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div><div><small>Instagram</small><b>@smfgroup.insaat</b></div></a>
+      </div>
+    </div>
+    <form class="reveal" id="form" novalidate>
+      <h3>Danışmanımız sizi arasın</h3>
+      <p>Bilgilerinizi bırakın, en kısa sürede size dönüş yapalım.</p>
+      <div class="f2">
+        <div class="f"><label for="n">Ad Soyad *</label><input id="n" name="Ad Soyad" autocomplete="name" required></div>
+        <div class="f"><label for="t">Telefon *</label><input id="t" name="Telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required></div>
+      </div>
+      <div class="f"><label for="em">E-posta</label><input id="em" name="E-posta" type="email" autocomplete="email" placeholder="İsteğe bağlı"></div>
+      <div class="f"><label for="k">İlgilendiğiniz Proje</label><select id="k" name="İlgilendiği Proje"><option>SMF Center - Ofis</option><option>SMF Center - Daire</option><option>Lüks Villa Projesi</option><option>SMF Yapı Market</option><option>Kurumsal / İş Birliği</option><option>Diğer</option></select></div>
+      <div class="f"><label for="m">Mesajınız</label><textarea id="m" name="Mesaj" placeholder="Kısaca belirtin..."></textarea></div>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="kv"><input type="checkbox" id="kv" required><span><a href="#kvkk" class="kvlink">Aydınlatma Metni</a>'ni okudum. Bilgilerimin bu talep kapsamında benimle iletişime geçilmesi amacıyla işlenmesine ve bu amaçla yurt dışındaki e-posta iletim hizmeti üzerinden aktarılmasına açık rıza veriyorum.</span></label>
+      <div class="ferr" id="ferr" role="alert"></div>
+      <button class="btn btn-red" type="submit" id="fbtn" style="justify-content:center">Gönder →</button>
+      <a class="falt" href="https://wa.me/905382372716" target="_blank" rel="noopener">veya WhatsApp'tan hemen yazın</a>
+      <div class="fok" id="fok" hidden>
+        <div class="fok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+        <h3>Talebiniz alındı</h3>
+        <p>Teşekkür ederiz. Danışmanımız en kısa sürede sizinle iletişime geçecektir.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div><div class="plate"><img src="img/logo.png" alt="SMF Group"></div><p style="margin-top:1.2rem;max-width:340px;font-size:.9rem">Kaliteden ödün vermeden, modern Türkiye'nin mimari geleceğine imza atıyoruz.</p></div>
+      <div><h4>Projeler</h4><ul><li><a href="#smf-center">SMF Center</a></li><li><a href="#referanslar">Malatya Adalet Binası</a></li><li><a href="#referanslar">TOKİ Osmaniye 1001 Konut</a></li><li><a href="#santiyeler">830 Köy Konutu</a></li><li><a href="#santiyeler">Şantiyelerimiz</a></li><li><a href="#villalar">Lüks Villalar</a></li><li><a href="#yapi-market">SMF Yapı Market</a></li><li><a href="#yonetim">Yönetim Kadromuz</a></li></ul></div>
+      <div><h4>İletişim</h4><ul><li><a href="tel:+905382372716">0538 237 27 16</a></li><li><a href="mailto:smfenerji@hotmail.com">smfenerji@hotmail.com</a></li><li><a href="https://instagram.com/smfgroup.insaat" target="_blank" rel="noopener">Instagram · @smfgroup.insaat</a></li><li>Yeşilyurt / Malatya</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Smf Group ve İnşaat Enerji Ltd. Şti. Tüm hakları saklıdır. · <a href="#kvkk" class="kvlink">KVKK Aydınlatma Metni</a></span><span>SMF Center ve villa görselleri proje tasarım çalışmalarıdır.</span></div>
+  </div>
+</footer>
+
+
+<div class="kvm" id="kvkk" role="dialog" aria-modal="true" aria-labelledby="kvt">
+  <div class="kvm-box">
+    <div class="kvm-head"><h3 id="kvt">Kişisel Verilerin Korunması Aydınlatma Metni</h3><button type="button" id="kvx" aria-label="Kapat">×</button></div>
+    <div class="kvm-body">
+      <div class="meta"><b>Veri Sorumlusu:</b> Smf Group ve İnşaat Enerji Ltd. Şti.<br><b>Adres:</b> Cevatpaşa Mah. Şehit İ. Alpay Bulvarı, Kartal Kavşağı No:15C Yeşilyurt / Malatya<br><b>E-posta:</b> smfenerji@hotmail.com</div>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, veri sorumlusu sıfatıyla Smf Group ve İnşaat Enerji Ltd. Şti. ("Şirket") olarak, web sitemiz üzerinden paylaştığınız kişisel verilerinizin işlenmesine ilişkin sizi bilgilendirmek isteriz.</p>
+      <h4>1. İşlenen Kişisel Veriler</h4>
+      <p>İletişim formu aracılığıyla paylaştığınız ad-soyad, telefon numarası, e-posta adresi, ilgilendiğiniz proje ve mesaj içeriği.</p>
+      <h4>2. İşleme Amaçları</h4>
+      <ul><li>Bilgi ve satış taleplerinize dönüş yapılması,</li><li>Projelerimiz ve hizmetlerimiz hakkında sizinle iletişime geçilmesi,</li><li>Talep ve başvuruların takip edilmesi.</li></ul>
+      <h4>3. Toplama Yöntemi ve Hukuki Sebep</h4>
+      <p>Kişisel verileriniz, web sitemizdeki iletişim formu aracılığıyla elektronik ortamda toplanmaktadır. Verileriniz KVKK'nın 5/2-c maddesi kapsamında bir sözleşmenin kurulmasıyla doğrudan ilgili olması, 5/2-f maddesi kapsamında Şirketimizin meşru menfaati ve yurt dışına aktarım bakımından açık rızanız hukuki sebeplerine dayanılarak işlenmektedir.</p>
+      <h4>4. Aktarım</h4>
+      <p>Form aracılığıyla ilettiğiniz bilgiler, Şirketimize ulaştırılması amacıyla sunucuları yurt dışında bulunan e-posta iletim hizmeti sağlayıcısı üzerinden aktarılmaktadır. Bu aktarım, formu gönderirken verdiğiniz açık rızaya dayanmaktadır. Verileriniz bunun dışında, yalnızca kanunen yetkili kamu kurum ve kuruluşlarına, talep edilmesi halinde ve mevzuatın izin verdiği ölçüde aktarılabilir.</p>
+      <h4>5. Saklama Süresi</h4>
+      <p>Kişisel verileriniz, işleme amacının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen süreler kadar saklanır; sürenin sona ermesiyle silinir, yok edilir veya anonim hale getirilir.</p>
+      <h4>6. Haklarınız</h4>
+      <p>KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonucun ortaya çıkmasına itiraz etme ve kanuna aykırı işleme sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+      <h4>7. Başvuru</h4>
+      <p>Haklarınıza ilişkin taleplerinizi yukarıdaki adrese yazılı olarak veya smfenerji@hotmail.com adresine e-posta yoluyla iletebilirsiniz. Başvurunuz en geç 30 gün içinde ücretsiz olarak sonuçlandırılacaktır.</p>
+    </div>
+  </div>
+</div>
+<div class="lb" id="lb"><img alt=""><div class="lbcap" id="lbcap"></div></div>
+
+<a class="wa" href="https://wa.me/905382372716" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+</a>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+const links=document.getElementById('links');
+document.getElementById('burger').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.g').forEach(g=>g.onclick=()=>{const u=getComputedStyle(g.querySelector('.gi')).backgroundImage.slice(5,-2);lbi.src=u;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');
+const lbcap=document.getElementById('lbcap');
+document.querySelectorAll('.count').forEach(el=>{const to=+el.dataset.to;
+  new IntersectionObserver((es,o)=>{if(!es[0].isIntersecting)return;o.disconnect();const t0=performance.now(),d=1600;
+    const step=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3))).toLocaleString('tr-TR');if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)},{threshold:.4}).observe(el)});
+document.querySelectorAll('[data-full]').forEach(f=>f.addEventListener('click',()=>{lbi.src=f.dataset.full;lbcap.textContent=f.dataset.cap||'';lb.classList.add('on')}));
+document.querySelectorAll('.g').forEach(g=>g.addEventListener('click',()=>{lbcap.textContent=g.querySelector('span')?.textContent||''}));
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+const vid=document.getElementById('refVid'),vb=document.getElementById('vidBtn'),vic=document.getElementById('vidIc');
+const setIc=()=>vic.innerHTML=vid.paused?'<path d="M8 5v14l11-7z"/>':'<path d="M7 5h3v14H7zM14 5h3v14h-3z"/>';
+vb.onclick=()=>{vid.paused?vid.play():vid.pause();setIc()};vid.addEventListener('play',setIc);vid.addEventListener('pause',setIc);
+new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)vid.pause();else if(vid.dataset.user!=='paused')vid.play().catch(()=>{})}),{threshold:.25}).observe(vid);
+vb.addEventListener('click',()=>vid.dataset.user=vid.paused?'paused':'');
+
+
+/* SMF Center konum videosu: sessiz, görünürken oynar */
+const kv=document.getElementById('konVid');
+new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting?kv.play().catch(()=>{}):kv.pause()}),{threshold:.3}).observe(kv);
+
+/* Yapı Malzemeleri → iletişim formu, proje seçili gelsin */
+document.querySelectorAll('[data-proje]').forEach(a=>a.addEventListener('click',()=>{const s=document.getElementById('k');if(s){s.value=a.dataset.proje;}}));
+/* KVKK modal */
+const kvm=document.getElementById('kvkk');
+document.querySelectorAll('.kvlink').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();kvm.classList.add('on');document.body.style.overflow='hidden'}));
+const kvClose=()=>{kvm.classList.remove('on');document.body.style.overflow=''};
+document.getElementById('kvx').onclick=kvClose;kvm.addEventListener('click',e=>{if(e.target===kvm)kvClose()});
+addEventListener('keydown',e=>{if(e.key==='Escape')kvClose()});
+/* İletişim formu → smfenerji@hotmail.com (FormSubmit) */
+const fm=document.getElementById('form'),ferr=document.getElementById('ferr');
+document.getElementById('t').addEventListener('input',e=>{let d=e.target.value.replace(/\D/g,'').slice(0,11);e.target.value=d.replace(/^(\d{4})(\d{0,3})(\d{0,2})(\d{0,2}).*/,(_,a,b,c,x)=>[a,b,c,x].filter(Boolean).join(' '))});
+fm.addEventListener('submit',async e=>{
+  e.preventDefault();ferr.textContent='';fm.querySelectorAll('.bad').forEach(x=>x.classList.remove('bad'));
+  const n=document.getElementById('n'),t=document.getElementById('t'),em=document.getElementById('em');
+  const bad=[];if(n.value.trim().length<3)bad.push(n);if(t.value.replace(/\D/g,'').length<10)bad.push(t);if(em.value&&!/^\S+@\S+\.\S+$/.test(em.value))bad.push(em);
+  if(bad.length){bad.forEach(x=>x.classList.add('bad'));bad[0].focus();ferr.textContent='Lütfen işaretli alanları kontrol edin.';return}
+  if(!document.getElementById('kv').checked){ferr.textContent='Devam etmek için onay kutusunu işaretleyin.';return}
+  if(fm.querySelector('.hp').value)return;
+  const data=Object.fromEntries([...fm.querySelectorAll('[name]')].filter(x=>x.name!=='_honey').map(x=>[x.name,x.value.trim()||'-']));
+  Object.assign(data,{_subject:'Web sitesi - Yeni bilgi talebi: '+data['Ad Soyad'],_template:'table',_captcha:'false'});
+  if(data['E-posta']!=='-')data._replyto=data['E-posta'];
+  fm.classList.add('sending');document.getElementById('fbtn').textContent='Gönderiliyor...';
+  try{
+    const r=await fetch('https://formsubmit.co/ajax/smfenerji@hotmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok||String(j.success)==='false')throw new Error(j.message||'hata');
+    fm.classList.add('done');document.getElementById('fok').hidden=false;
+  }catch(err){
+    ferr.innerHTML='Mesajınız şu an gönderilemedi. Lütfen tekrar deneyin ya da <a href="https://wa.me/905382372716" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">WhatsApp\'tan</a> yazın.';
+  }finally{fm.classList.remove('sending');document.getElementById('fbtn').textContent='Gönder →'}
+});
+</script>
+</body>
+</html>
